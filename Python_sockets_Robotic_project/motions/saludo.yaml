@@ -1,0 +1,63 @@
+sequence_name: saludo
+
+steps:
+  - name: init
+    motion: moveJ
+    joints_deg: [-60, -65, -100, 170, -60, 0]
+    acceleration: 1.2
+    velocity: 0.5
+    time: 4.0
+    blend: 0.0
+
+  - name: left_handshake
+    motion: moveL
+    target_xyz_mm: [-300, -400, 500]
+    target_rpy_deg: [90, 0, 0]
+    acceleration: 1.2
+    velocity: 0.15
+    time: 3.0
+    blend: 0.0
+
+  - name: right_handshake
+    motion: moveL
+    target_xyz_mm: [300, -400, 500]
+    target_rpy_deg: [90, 0, 0]
+    acceleration: 1.2
+    velocity: 0.10
+    time: 3.0
+    blend: 0.0
+
+  - name: choque1
+    motion: moveL
+    target_xyz_mm: [-1, -400, 490]
+    target_rpy_deg: [7.382, 0.608, 89.697]
+    acceleration: 1.2
+    velocity: 0.10
+    time: 3.0
+    blend: 0.0
+
+  - name: choque2
+    motion: moveL
+    target_xyz_mm: [-1, -550, 490]
+    target_rpy_deg: [7.382, 0.608, 89.697]
+    acceleration: 1.2
+    velocity: 0.10
+    time: 1.0
+    blend: 0.0
+
+  - name: choque3
+    motion: moveL
+    target_xyz_mm: [-1, -400, 490]
+    target_rpy_deg: [7.382, 0.608, 89.697]
+    acceleration: 1.2
+    velocity: 0.10
+    time: 1.0
+    blend: 0.0
+
+  - name: init
+    motion: moveJ
+    joints_deg: [-60, -65, -100, 170, -60, 0]
+    acceleration: 1.2
+    velocity: 0.5
+    time: 3.0
+    blend: 0.0
